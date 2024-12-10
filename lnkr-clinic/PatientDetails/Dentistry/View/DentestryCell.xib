@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="636" id="KGk-i7-Jjw" customClass="DentestryCell" customModule="lnkr_clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="636"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="636"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gtx-h0-O7e">
+                        <rect key="frame" x="5" y="5" width="396" height="626"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </tableView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoData" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-aL-8e7">
+                        <rect key="frame" x="103" y="218" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="6sy-yo-mnb"/>
+                            <constraint firstAttribute="width" constant="200" id="AWq-D1-60c"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w8w-aL-8e7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0nM-Xz-6P3"/>
+                    <constraint firstAttribute="trailing" secondItem="Gtx-h0-O7e" secondAttribute="trailing" constant="5" id="6BM-V3-sdE"/>
+                    <constraint firstItem="Gtx-h0-O7e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="IU7-xQ-2dC"/>
+                    <constraint firstAttribute="bottom" secondItem="Gtx-h0-O7e" secondAttribute="bottom" constant="5" id="SSV-ZA-KNh"/>
+                    <constraint firstItem="Gtx-h0-O7e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="poC-tE-VWZ"/>
+                    <constraint firstItem="w8w-aL-8e7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xGe-Sn-3Sp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noDataImg" destination="w8w-aL-8e7" id="hLO-Sk-vDh"/>
+                <outlet property="tableView" destination="Gtx-h0-O7e" id="7uC-sn-ICf"/>
+            </connections>
+            <point key="canvasLocation" x="-9.2307692307692299" y="-31.279620853080566"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NoData" width="1116" height="744"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="868" id="KGk-i7-Jjw" customClass="PersonalInfoCell" customModule="lnkr_clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="868"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="868"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsB-v1-LM7">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="868"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t05-bh-TLa">
+                                <rect key="frame" x="0.0" y="0.0" width="339" height="904"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="byg-yU-g7d">
+                                        <rect key="frame" x="119.66666666666669" y="22.000000000000007" width="100" height="96.666666666666686"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="1PY-1j-grP"/>
+                                            <constraint firstAttribute="height" constant="100" id="WF4-5G-dXV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BWd-13-Rbc">
+                                        <rect key="frame" x="20" y="157" width="299" height="170"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FullName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-RT-VYO" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gEM-eO-k8y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MobileNumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGl-Ks-3B0" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="xjP-57-wLG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BirthDate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1M9-fr-hNh" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pWf-q4-9Qi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gji-w5-bXl">
+                                        <rect key="frame" x="20" y="374" width="299" height="170"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NationalID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-Vw-iGW" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3MG-OL-9Dv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rug-oF-4N8" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="q5y-aG-c1g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Has Card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-RS-KoW" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HSP-73-Zbw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CTb-xJ-kGE">
+                                        <rect key="frame" x="20" y="614.33333333333337" width="299" height="170"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Drug Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7H-zZ-OyO" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9ek-k7-2Fz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Drug Allergy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IuB-Qy-1Z5" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="SF0-TF-a6e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Allergy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxV-NS-OXj" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="299" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0Kc-N6-R0W"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="nic-Ix-A6g">
+                                        <rect key="frame" x="20" y="342" width="299" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUo-CI-4mo">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="22"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="m11-Zw-ikr">
+                                                <rect key="frame" x="142.33333333333334" y="0.0" width="47" height="22"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5O-p9-Wps">
+                                                        <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="22"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="maleBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hPl-4p-2ft"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="754-0B-i0R">
+                                                        <rect key="frame" x="21.666666666666657" y="0.0" width="25.333333333333329" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5fN-5a-b57">
+                                                <rect key="frame" x="240.33333333333329" y="0.0" width="58.666666666666657" height="22"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZm-sx-IeA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="22"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="femaleBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qJM-Nb-XRt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nf-yH-Fzl">
+                                                        <rect key="frame" x="20.666666666666686" y="0.0" width="38" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="61N-KG-1ev">
+                                        <rect key="frame" x="67.333333333333329" y="554" width="204.66666666666669" height="50.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="few-6V-PQ2">
+                                                <rect key="frame" x="0.0" y="0.0" width="204.66666666666666" height="22"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="creditcard" catalog="system"/>
+                                                <connections>
+                                                    <action selector="addCardBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SU5-Hx-M72"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to add a card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7J-O8-Gc5">
+                                                <rect key="frame" x="0.0" y="30" width="204.66666666666666" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zze-Bw-c4F">
+                                        <rect key="frame" x="119.66666666666669" y="794.33333333333337" width="100" height="40"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="3u3-Zr-6aC"/>
+                                            <constraint firstAttribute="height" constant="40" id="ljN-Af-wfj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Update"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="updateBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wly-SA-6kI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Gji-w5-bXl" firstAttribute="leading" secondItem="t05-bh-TLa" secondAttribute="leading" constant="20" id="5BO-pf-M3H"/>
+                                    <constraint firstItem="61N-KG-1ev" firstAttribute="centerX" secondItem="t05-bh-TLa" secondAttribute="centerX" id="78A-uq-EhK"/>
+                                    <constraint firstItem="byg-yU-g7d" firstAttribute="top" secondItem="t05-bh-TLa" secondAttribute="top" constant="20" id="EH7-3c-OeN"/>
+                                    <constraint firstItem="nic-Ix-A6g" firstAttribute="top" secondItem="BWd-13-Rbc" secondAttribute="bottom" constant="15" id="FkJ-U6-v5H"/>
+                                    <constraint firstItem="61N-KG-1ev" firstAttribute="top" secondItem="Gji-w5-bXl" secondAttribute="bottom" constant="10" id="K0w-5l-fSb"/>
+                                    <constraint firstItem="Zze-Bw-c4F" firstAttribute="centerX" secondItem="t05-bh-TLa" secondAttribute="centerX" id="NLU-AD-onf"/>
+                                    <constraint firstItem="BWd-13-Rbc" firstAttribute="top" secondItem="byg-yU-g7d" secondAttribute="bottom" constant="37" id="PM6-zJ-GSO"/>
+                                    <constraint firstItem="CTb-xJ-kGE" firstAttribute="top" secondItem="61N-KG-1ev" secondAttribute="bottom" constant="10" id="PPW-lb-fiU"/>
+                                    <constraint firstAttribute="trailing" secondItem="BWd-13-Rbc" secondAttribute="trailing" constant="20" id="Pqn-WW-B0u"/>
+                                    <constraint firstItem="BWd-13-Rbc" firstAttribute="leading" secondItem="t05-bh-TLa" secondAttribute="leading" constant="20" id="S0T-RK-spp"/>
+                                    <constraint firstItem="nic-Ix-A6g" firstAttribute="leading" secondItem="t05-bh-TLa" secondAttribute="leading" constant="20" id="To9-5g-LHt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gji-w5-bXl" secondAttribute="trailing" constant="20" id="Ycf-Gy-SpW"/>
+                                    <constraint firstAttribute="trailing" secondItem="CTb-xJ-kGE" secondAttribute="trailing" constant="20" id="cp0-Mm-KLN"/>
+                                    <constraint firstItem="CTb-xJ-kGE" firstAttribute="leading" secondItem="t05-bh-TLa" secondAttribute="leading" constant="20" id="e7A-bD-zmK"/>
+                                    <constraint firstAttribute="trailing" secondItem="nic-Ix-A6g" secondAttribute="trailing" constant="20" id="fdk-09-goJ"/>
+                                    <constraint firstItem="Gji-w5-bXl" firstAttribute="top" secondItem="nic-Ix-A6g" secondAttribute="bottom" constant="10" id="qZW-Cp-CaG"/>
+                                    <constraint firstItem="Zze-Bw-c4F" firstAttribute="top" secondItem="CTb-xJ-kGE" secondAttribute="bottom" constant="10" id="sPV-ja-a1T"/>
+                                    <constraint firstItem="byg-yU-g7d" firstAttribute="centerX" secondItem="t05-bh-TLa" secondAttribute="centerX" id="sQD-q2-BCs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zze-Bw-c4F" secondAttribute="bottom" constant="69.666666666666629" id="t83-i0-TZH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t05-bh-TLa" secondAttribute="trailing" id="IUr-ka-7Ag"/>
+                            <constraint firstAttribute="bottom" secondItem="t05-bh-TLa" secondAttribute="bottom" id="WAi-ib-oZM"/>
+                            <constraint firstItem="t05-bh-TLa" firstAttribute="width" secondItem="LsB-v1-LM7" secondAttribute="width" id="ZnD-7O-uzn"/>
+                            <constraint firstItem="t05-bh-TLa" firstAttribute="leading" secondItem="LsB-v1-LM7" secondAttribute="leading" id="aIY-VN-IfG"/>
+                            <constraint firstItem="t05-bh-TLa" firstAttribute="top" secondItem="LsB-v1-LM7" secondAttribute="top" id="cza-C2-4xz"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LsB-v1-LM7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6nm-Lt-UHi"/>
+                    <constraint firstAttribute="bottom" secondItem="LsB-v1-LM7" secondAttribute="bottom" id="Obf-Tj-T4U"/>
+                    <constraint firstItem="LsB-v1-LM7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dtP-rR-Ktk"/>
+                    <constraint firstAttribute="trailing" secondItem="LsB-v1-LM7" secondAttribute="trailing" id="lFV-VG-y8p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="birthDateTF" destination="1M9-fr-hNh" id="bvQ-3v-S1i"/>
+                <outlet property="drugAllegryOutlet" destination="IuB-Qy-1Z5" id="zyw-Ba-2X0"/>
+                <outlet property="drugTypeOutlet" destination="T7H-zZ-OyO" id="C99-Cb-N3M"/>
+                <outlet property="emailTF" destination="rug-oF-4N8" id="DNd-EP-hIq"/>
+                <outlet property="femaleBtnOutlet" destination="IZm-sx-IeA" id="8TI-GS-HUB"/>
+                <outlet property="foodAllegryOutlet" destination="bxV-NS-OXj" id="9Oi-MP-2uF"/>
+                <outlet property="fullNameTF" destination="mFJ-RT-VYO" id="YeA-ZR-3gc"/>
+                <outlet property="hasCardTF" destination="o0A-RS-KoW" id="kF0-lZ-iGy"/>
+                <outlet property="maleBtnOutlet" destination="e5O-p9-Wps" id="DuQ-FQ-zMI"/>
+                <outlet property="mobileNumberTF" destination="CGl-Ks-3B0" id="tgW-nC-zdS"/>
+                <outlet property="nationalIDTF" destination="dKy-Vw-iGW" id="Fab-YW-CkF"/>
+                <outlet property="patientImgV" destination="byg-yU-g7d" id="cnC-Mn-Ob4"/>
+            </connections>
+            <point key="canvasLocation" x="377.69230769230768" y="93.127962085308056"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="1M9-fr-hNh">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="CGl-Ks-3B0">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="IuB-Qy-1Z5">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="T7H-zZ-OyO">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="bxV-NS-OXj">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="dKy-Vw-iGW">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="mFJ-RT-VYO">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="o0A-RS-KoW">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="rug-oF-4N8">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

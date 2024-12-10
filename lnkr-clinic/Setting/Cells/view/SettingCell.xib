@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SettingCell" id="gTV-IL-0wX" customClass="SettingCell" customModule="lnkr_clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGz-Vo-Gvp">
+                        <rect key="frame" x="10" y="5" width="212" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3dX-9B-U6f"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="K0S-f5-ONP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWj-Cc-tyS">
+                        <rect key="frame" x="0.0" y="47" width="232" height="3"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="CED-0L-vPJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DWj-Cc-tyS" secondAttribute="bottom" id="Nn3-l6-Obc"/>
+                <constraint firstItem="WGz-Vo-Gvp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="agm-IJ-4tg"/>
+                <constraint firstItem="DWj-Cc-tyS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bjz-Eg-Ww9"/>
+                <constraint firstAttribute="trailing" secondItem="WGz-Vo-Gvp" secondAttribute="trailing" constant="10" id="cP2-Dt-toC"/>
+                <constraint firstItem="WGz-Vo-Gvp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kiz-Pt-Yc3"/>
+                <constraint firstAttribute="trailing" secondItem="DWj-Cc-tyS" secondAttribute="trailing" id="lcK-Ts-YYp"/>
+            </constraints>
+            <size key="customSize" width="232" height="59"/>
+            <connections>
+                <outlet property="selectionView" destination="DWj-Cc-tyS" id="Lep-YR-10f"/>
+                <outlet property="settingCategoryTitle" destination="WGz-Vo-Gvp" id="3a6-CD-o88"/>
+            </connections>
+            <point key="canvasLocation" x="184.61538461538461" y="19.549763033175356"/>
+        </collectionViewCell>
+    </objects>
+</document>

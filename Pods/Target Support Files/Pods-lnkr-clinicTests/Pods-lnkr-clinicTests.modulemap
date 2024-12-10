@@ -1,0 +1,6 @@
+framework module Pods_lnkr_clinicTests {
+  umbrella header "Pods-lnkr-clinicTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

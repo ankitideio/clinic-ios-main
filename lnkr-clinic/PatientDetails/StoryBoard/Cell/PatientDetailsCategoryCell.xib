@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="V1h-Ns-hhE" customClass="PatientDetailsCategoryCell" customModule="lnkr_clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-9M-b9B">
+                        <rect key="frame" x="10" y="5" width="212" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Rq5-Zg-Jdp"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Txh-bD-goc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-oV-bok">
+                        <rect key="frame" x="0.0" y="47" width="232" height="3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="5JW-1d-3Yk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="wwS-F2-kxA"/>
+            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pgu-oV-bok" secondAttribute="bottom" id="AWH-Kx-XiM"/>
+                <constraint firstAttribute="trailing" secondItem="sbs-9M-b9B" secondAttribute="trailing" constant="10" id="Sb7-lt-QD7"/>
+                <constraint firstItem="pgu-oV-bok" firstAttribute="leading" secondItem="V1h-Ns-hhE" secondAttribute="leading" id="m29-bk-2iK"/>
+                <constraint firstItem="sbs-9M-b9B" firstAttribute="leading" secondItem="V1h-Ns-hhE" secondAttribute="leading" constant="10" id="miJ-xe-Z0c"/>
+                <constraint firstAttribute="trailing" secondItem="pgu-oV-bok" secondAttribute="trailing" id="p47-m8-zau"/>
+                <constraint firstItem="sbs-9M-b9B" firstAttribute="top" secondItem="V1h-Ns-hhE" secondAttribute="top" constant="5" id="uH9-3U-3FY"/>
+            </constraints>
+            <size key="customSize" width="232" height="59"/>
+            <connections>
+                <outlet property="selectionView" destination="pgu-oV-bok" id="PV7-pc-wYs"/>
+                <outlet property="title" destination="sbs-9M-b9B" id="lGC-5z-d9I"/>
+            </connections>
+            <point key="canvasLocation" x="97" y="-8"/>
+        </collectionViewCell>
+    </objects>
+</document>

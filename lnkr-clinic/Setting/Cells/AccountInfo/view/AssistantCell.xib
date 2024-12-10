@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AssistantCell" id="gTV-IL-0wX" customClass="AssistantCell" customModule="lnkr_clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="653"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="653"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HbT-Kw-eal">
+                        <rect key="frame" x="20" y="20" width="432" height="110"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="National ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lcq-qw-8w9" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="432" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Git-Xz-qgV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="MobileNumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URy-Ai-3fs" customClass="CustomTextField" customModule="lnkr_clinic" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="432" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1UW-uh-J8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPs-Yl-CwE">
+                        <rect key="frame" x="161" y="156" width="150" height="50"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gYF-yb-9gG"/>
+                            <constraint firstAttribute="width" constant="150" id="uGp-Qn-kIc"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="UPDATE">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="updateDentist:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kb5-T8-4Zc"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YE6-iu-CSJ">
+                        <rect key="frame" x="181.66666666666666" y="216" width="108.99999999999997" height="30"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Reset Password">
+                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="resetPassword:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5ZE-4Y-UY0"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YE6-iu-CSJ" firstAttribute="centerX" secondItem="zPs-Yl-CwE" secondAttribute="centerX" id="54H-pH-8Zt"/>
+                <constraint firstItem="YE6-iu-CSJ" firstAttribute="top" secondItem="zPs-Yl-CwE" secondAttribute="bottom" constant="10" id="JDq-Ya-2nt"/>
+                <constraint firstItem="zPs-Yl-CwE" firstAttribute="top" secondItem="URy-Ai-3fs" secondAttribute="bottom" constant="26" id="WbJ-Lb-1CA"/>
+                <constraint firstItem="zPs-Yl-CwE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XbK-cH-g92"/>
+                <constraint firstItem="HbT-Kw-eal" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="lAQ-qz-pbq"/>
+                <constraint firstAttribute="trailing" secondItem="HbT-Kw-eal" secondAttribute="trailing" constant="20" id="n4f-qs-fVq"/>
+                <constraint firstItem="HbT-Kw-eal" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="sw4-qd-ML4"/>
+            </constraints>
+            <size key="customSize" width="472" height="653"/>
+            <connections>
+                <outlet property="mobileNumberTF" destination="URy-Ai-3fs" id="RHj-Fw-Q4t"/>
+                <outlet property="nationalIDTF" destination="Lcq-qw-8w9" id="wAk-Vq-luh"/>
+            </connections>
+            <point key="canvasLocation" x="330.76923076923077" y="133.29383886255923"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Lcq-qw-8w9">
+            <size key="intrinsicContentSize" width="78.666666666666671" height="26.666666666666668"/>
+        </designable>
+        <designable name="URy-Ai-3fs">
+            <size key="intrinsicContentSize" width="103" height="26.666666666666668"/>
+        </designable>
+    </designables>
+</document>
